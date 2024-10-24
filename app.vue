@@ -1,6 +1,15 @@
+<script setup lang="ts">
+useHead({
+  titleTemplate: (titlePage) => {
+    return titlePage
+      ? `${titlePage} | Pokémon`
+      : 'Pokémon'
+  }
+})
+</script>
+
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <NuxtPage />
   </div>
 </template>
